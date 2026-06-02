@@ -3,8 +3,6 @@ name: Build Do Not Disturb APK
 on:
   push:
     branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
@@ -20,20 +18,17 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: gradle
     
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
+      with:
+        gradle-version: 8.2
     
-    - name: Make gradlew executable
-      run: chmod +x gradlew
-    
-    - name: Build Release APK
-      run: ./gradlew assembleRelease --stacktrace
+    - name: Build APK
+      run: gradle assembleRelease
     
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: DoNotDisturb-APK
         path: app/build/outputs/apk/release/*.apk
-        if-no-files-found: error
