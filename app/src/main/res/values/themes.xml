@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.DoNotDisturb" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+    </style>
+    <style name="Theme.DoNotDisturb.Lock" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>
