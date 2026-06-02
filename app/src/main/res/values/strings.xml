@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Do Not Disturb</string>
+    <string name="device_admin_label">Do Not Disturb Admin</string>
+    <string name="device_admin_description">Prevents uninstall during focus mode</string>
+    <string name="accessibility_service_label">Do Not Disturb Blocker</string>
+    <string name="accessibility_service_description">Blocks apps during focus mode</string>
+</resources>
