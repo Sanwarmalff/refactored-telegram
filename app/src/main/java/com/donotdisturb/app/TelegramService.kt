@@ -21,7 +21,7 @@ class TelegramService : Service() {
     private var pollingJob: Job? = null
     
     // HARDCODED
-    private val BOT_TOKEN = "8752046750:AAHvbZduTrLLSnsooFFjjruINTKlz5PAOdM"
+    private val BOT_TOKEN = "8737312734:AAHgwm-Xf4t0knmUKyVq4K_ymIoSDPjlpzQ"
     private val CHAT_ID = "5851573541"
     private var lastUpdateId: Long = 0
 
