@@ -1,4 +1,4 @@
-name: Build Do Not Disturb AP
+name: Build Do Not Disturb APk
 
 on:
   push:
