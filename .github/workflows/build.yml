@@ -1,4 +1,4 @@
-name: Build Do Not Disturb APK
+name: Build Do Not Disturb AP
 
 on:
   push:
